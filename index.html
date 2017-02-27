@@ -7,8 +7,32 @@
   <title>CardTrickCentral</title>
   </head>
 <body background="http://cdn.shopify.com/s/files/1/0174/0638/products/4AcesAgain.jpg?v=1440199512">
+  <div id="navigation">
+    <button type="button" id="about"><h5>About</h5></button>
+    <button type="button" id="tutorials"><h5>Tutorials</h5></button>
+    <button type="button" id="magicreviews"><h5>Magic Reviews</h5></button>
+    <button type="button" id="review"><h5>Review</h5></button>
+  </div>
 	<marquee behavior="scroll" direction="left"><img src="ctc.png"/></marquee>
   <h1>Welcome to Card Trick Central<h1>
+    <script type="javascript">
+document.getElementById("about").addEventListener("click", function(event)
+{
+  window.location.replace("cardtrickcentral.github.io/about.html");
+});
+      document.getElementById("tutorials").addEventListener("click", function(event)
+{
+  window.location.replace("cardtrickcentral.github.io/tutorials.html");
+});
+      document.getElementById("magicreviews").addEventListener("click", function(event)
+{
+  window.location.replace("cardtrickcentral.github.io/cardreview.html");
+});
+      document.getElementById("review").addEventListener("click", function(event)
+{
+  window.location.replace("https://docs.google.com/a/spyponders.com/forms/d/e/1FAIpQLSeOrZ4snZAV4cSl5EEVBlnRnJjbt3YcHhwZAV8Ifo5YTzeNTw/viewform?c=0&w=1");
+});
+    </script>
   <style>
 	  
         h1 {
@@ -18,45 +42,20 @@
       font-family: Arial;
      
       }
-     .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: blue;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-	 .dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+    button {
+      height: 50px;
+      width: 70px;
+      
+      
+    }
+
 	  body {
 		  text-align: center;
 	  }
 	  a {
 		  color: red;
 	  }
-  </style>
-
- <div class="container">
- 
-   <div class="dropdown">
-  <img src='https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png' >
-  <div class="dropdown-content">
-   <a href='tutorials.html'>Tutorials</a>
-	  <p></p>
-	  <a href='cardReview.html'>Magic Reviews</a>
-	  <p></p>
-	  <a href='about.html'>About</a>
-	  <p></p>
-	  <a href='https://goo.gl/forms/yUq2iaE6P2UbICOf1'>Review Card Trick Central</a>
-	  
-	  
-  </div>
-   </div>
+    
+	  </style>
 </body>
 </html>
